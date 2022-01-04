@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Barlow", sans-serif !important;
+  font-weight: 500;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-image: url("../assests/Rain.jpg");
+}
+.weather-display {
+  width: 60%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em;
+}
+.card-wrapper {
+  width: 20em;
+  height: 28em;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+button{
+width:10em;
+height: 30px;
+font-weight: bold;
+outline:none;
+border:none;
+border-radius:10px;
+cursor:pointer;
+background-color: rgb(50, 143, 219);
+}
+.card-img {
+  width: 12em;
+  height: 12em;
+  margin: 1em;
+}
+.weather-temp-day {
+  text-align: center;
+}
+
+.details {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+.details > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+small {
+  font-weight: bold;
+}
+.search {
+  width: 40%;
+  min-height: 100vh;
+  backdrop-filter: blur(25px) saturate(117%);
+  background-color: rgba(32, 29, 29, 0.17);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 20em;
+  height: 50px;
+  font-size: 1.4em;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid black;
+  color: black;
+  margin-top: 2em;
+  font-weight: bold;
+  margin-bottom: 4em;
+}
+.key-group{
+  width:80%;
+  margin:2em;
+}
+.key{
+  width:20em;
+  margin:1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.key>small{
+  margin-right:2em;
+}
